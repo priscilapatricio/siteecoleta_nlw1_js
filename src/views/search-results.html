@@ -1,32 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt_br">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% set pageId = "page-search-results" %}
+
+{% block title %}
     <title>Resultado da pesquisa</title>
+{% endblock title %}
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/styles/main.css">
+{% block styles %}
     <link rel="stylesheet" href="/styles/search-results.css">
-   
-    <link rel="stylesheet" href="/styles/responsive.css">
-</head>
-<body>
+{% endblock styles %}
 
-    <div id="page-search-results">
-      
+{% block content %}
+    <div id="">
 
-         <header>
-            <img src="/assets/logo.svg" alt="Logomarca">   
-            <a href="index.html">
-                 <span></span>
-                Voltar para home
-            </a>
-        </header>
+    {% include "partials/page-header.html" %}
 
-      <main>
+    <main>
 
         <h4>
             <strong>2 Pontos encontrados</strong>
@@ -38,8 +27,10 @@
                 <h1>Colectoria</h1>
                 <h3>Resíduos Eletrônicos, Lâmpadas</h3>
                 <p>
-                    Rio do Sul, Santa Catarina <br/>
-                    Guilherme Gemballa, Jardim América <br/>
+                    Rio do Sul, Santa Catarina
+                    <br/>
+                    Guilherme Gemballa, Jardim América
+                    <br/>
                     Nº 260
                 </p>
             </div>
@@ -48,15 +39,13 @@
                 <h1>Papersider</h1>
                 <h3>Papéis e Papelão</h3>
                 <p>
-                    Rio do Sul, Santa Catarina <br/>
-                    Guilherme Gemballa, Jardim América <br/>
+                    Rio do Sul, Santa Catarina
+                    <br/>
+                    Guilherme Gemballa, Jardim América
+                    <br/>
                     Nº 260
                 </p>
             </div>
         </div>
-      </main>
-
-           
-</div>
-</body>
-</html>
+    </main>
+{% endblock content %}
