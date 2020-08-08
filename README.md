@@ -22,7 +22,7 @@
   <img alt="Ecoleta" src=".github/ecoleta.png" width="100%">
 </p>
 
-## Curso Rocketseat (Plataforma de educação em tecnologia)
+## Curso Rocketseat (Plataforma de educação em tecnologia) - NLW1
 
 ## 🚀 Tecnologias
 
